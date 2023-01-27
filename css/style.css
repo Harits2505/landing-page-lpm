@@ -185,4 +185,8 @@ button{
     .mycontent .colum-2{
         display: none;
     }
+    .myhero{
+        min-height: 70vh;
+    }
+
 }
