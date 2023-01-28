@@ -225,13 +225,8 @@ button{
         display: none;
     }
     .myhero{
-        min-height: 80vh;
+        min-height: 60vh;
     }
-    .about .row{
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    
     .about .row .about-img img{
         height: 26rem;
         object-fit: cover;
