@@ -13,10 +13,15 @@
     font-family: 'poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--primary);
     font-family: 'poppins', sans-serif;
     color: #fff;
+    height: 3000vh;
 }
 
 .mynavbar{
@@ -35,7 +40,7 @@ body{
 .mynavbar .mynavbar-nav a{
     color: #010101;
     display: inline-block;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0 1rem;
 }
 
@@ -56,7 +61,6 @@ body{
     transition: 0.2s linear;
 }
 
-/* hero section */
 #hamburger-menu {
     display: none;
 }
@@ -123,6 +127,41 @@ body{
     margin-right: 1rem;
 }
 
+/* about section */
+.about{
+    color: #010101;
+    background-color: #fff;
+}
+
+.about .content-about{
+    padding: 0 11%;
+}
+
+.about h2{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about .row{
+    display: flex;
+}
+
+.about .row .about-img{
+    flex: 1 1 20rem;
+}
+
+.about .row .about-content{
+    flex: 1 1 25rem;
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+.about .row .about-content p{
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    margin-left: 1rem;
+}
+
 .bg-white{
     background-color: #fff;
 }
@@ -186,7 +225,19 @@ button{
         display: none;
     }
     .myhero{
-        min-height: 60vh;
+        min-height: 80vh;
     }
-
+    .about .row{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .about .row .about-img img{
+        height: 26rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .about .row .about-content{
+        margin-bottom: 3rem;
+    }
 }
