@@ -134,7 +134,7 @@ body{
 }
 
 .about .content-about{
-    padding: 0 11%;
+    padding: 0 10%;
 }
 
 .about h2{
@@ -150,10 +150,15 @@ body{
     flex: 1 1 20rem;
 }
 
+.about .row .about-img img{
+    width: 100%;
+}
+
 .about .row .about-content{
-    flex: 1 1 25rem;
+    flex: 1 1 15rem;
     padding: 0 1rem;
     font-weight: 600;
+    text-align: justify;
 }
 
 .about .row .about-content p{
@@ -181,7 +186,7 @@ button{
     
 } */
 
-@media (max-width: 600px){
+@media (max-width: 480px){
     html{
         font-size: 60%;
     }
@@ -215,17 +220,12 @@ button{
     .mynavbar .mynavbar-nav a:hover::after {
         transform: scaleX(0.2);
     }
-    .mycontent{
+    .myhero .mycontent{
         text-align: center;
-    }
-    .footer{
-        display: none;
+        margin: auto;
     }
     .mycontent .colum-2{
         display: none;
-    }
-    .myhero{
-        min-height: 60vh;
     }
     .about .row .about-img img{
         height: 26rem;
