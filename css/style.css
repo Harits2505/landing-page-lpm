@@ -21,7 +21,6 @@ body{
     background-color: var(--primary);
     font-family: 'poppins', sans-serif;
     color: #fff;
-    height: 3000vh;
 }
 
 .mynavbar{
@@ -137,9 +136,9 @@ body{
     padding: 0 10%;
 }
 
-.about h2{
+.about h2, .contact h2{
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .about .row{
@@ -167,6 +166,32 @@ body{
     margin-left: 1rem;
 }
 
+/* contact section */
+.contact{
+    padding: 4rem 9%;
+    font-weight: 600;
+}
+
+.contact p{
+    text-align: center;
+}
+
+.contact .row{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.contact .row .map{
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 1.5rem;
+}
+
+.contact .contents{
+    display: block;
+}
+
 .bg-white{
     background-color: #fff;
 }
@@ -176,15 +201,55 @@ body{
     color: #fff;
 }
 
+/* footer section */
+footer{
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+    color: #010101;
+    font-weight: 600;
+}
+
+footer .socials{
+    padding: 1rem 0;
+    font-size: 30px;
+}
+
+footer .footer-content a{
+    color: #010101;
+}
+
+footer .socials a{
+    margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover{
+    color: var(--primary);
+}
+
+footer .links{
+    margin-bottom: 1.4rem;
+}
+
+footer .links a{
+    padding: 0.7rem 1rem;
+}
+
+footer .credit{
+    font-size: 0.8rem;
+}
+
 button{
     cursor: pointer;
 }
 
 /* media queries */
 
-/* @media (max-width: 1366px){
+@media (max-width: 1366px){
     
-} */
+}
 
 @media (max-width: 500px){
     html{
@@ -236,4 +301,10 @@ button{
     .about .row .about-content{
         margin-bottom: 3rem;
     }
+    .contact .row .map{
+        width: 50%;
+        height: 70%;
+    }
 }
+
+
