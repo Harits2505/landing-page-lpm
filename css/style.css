@@ -288,6 +288,9 @@ button{
         font-size: 60%;
         width: 100%;
     }
+    body{
+        overflow-x: hidden;
+    }
     #hamburger-menu{
         display: inline-block;
         background: none;
