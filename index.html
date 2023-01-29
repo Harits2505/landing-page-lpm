@@ -12,11 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
       rel="stylesheet"
     />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
     <!-- bootsrap CSS -->
     <link
       rel="stylesheet"
@@ -64,9 +59,13 @@
             sapiente. Ea quia assumenda beatae illo ullam. Aspernatur nam
             aperiam hic!
           </p>
-          <a href="">
-            <button class="button bg-white">Masuk</button>
-          </a>
+            <select class="button bg-white" id="myselect">
+              <option value="#" selected>
+                Masuk
+              </option>
+              <option value="https://github.com">Pelapor</option>
+              <option value="https://github.com">Pegawai</option>
+            </select>
           <a href="">
             <button class="button bg-primary">Daftar</button>
           </a>
@@ -198,5 +197,15 @@
     />
     <!-- my javascript -->
     <script src="js/script.js"></script>
+    <script>
+      let select = document.getElementById("myselect");
+      select.addEventListener("change", function(){
+        let selectedValue = this.value;
+
+        if(selectedValue != ""){
+          window.location = selectedValue;
+        }
+      })
+    </script>
   </body>
 </html>
