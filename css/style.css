@@ -283,7 +283,7 @@ button{
 } */
 
 
-@media (max-width: 580px){
+@media (max-width: 720px){
     html{
         font-size: 60%;
         width: 100%;
